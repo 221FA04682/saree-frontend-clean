@@ -60,7 +60,7 @@ export class AuthService {
   // ✅ FIXED
   register(name: string, email: string, password: string, phone: string) {
     return this.api.post<{ success: boolean; message: string; token: string; user: User }>(
-      '/api/auth/register', { name, email, password, phone }
+      '/auth/register', { name, email, password, phone }
     ).pipe(tap(r => {
       if (r.success) {
         localStorage.setItem('vv_token', r.token);
