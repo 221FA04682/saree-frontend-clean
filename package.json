@@ -2,7 +2,7 @@
   "name": "vastra-vaibhav-frontend",
   "version": "1.0.0",
 "scripts": {
-  "build": "chmod +x ./node_modules/.bin/ng && ./node_modules/.bin/ng build --configuration production"
+  "build": "ng build --configuration production && ls -R dist"
 },
  "engines": {
   "node": "24.x"
