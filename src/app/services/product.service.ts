@@ -95,37 +95,37 @@ export class ProductService {
   }
 
   getCategories(): Observable<{ success: boolean; categories: { _id: string; count: number }[] }> {
-    return this.api.get('/products/categories');
+    return this.api.get('/api/products/categories');
   }
 
   getMeta(): Observable<CatalogMetaResponse> {
-    return this.api.get('/products/meta');
+    return this.api.get('/api/products/meta');
   }
 
   create(data: Partial<Product>): Observable<{ success: boolean; message: string; product: Product }> {
-    return this.api.post('/products', data);
+    return this.api.post('/api/products', data);
   }
 
   update(id: string, data: Partial<Product>): Observable<{ success: boolean; message: string; product: Product }> {
-    return this.api.put(`/products/${id}`, data);
+    return this.api.put(`/api/products/${id}`, data);
   }
 
   delete(id: string): Observable<{ success: boolean; message: string }> {
-    return this.api.delete(`/products/${id}`);
+    return this.api.delete(`/api/products/${id}`);
   }
 
   updateStock(id: string, change: number, reason: string): Observable<{ success: boolean; message: string; stock: number }> {
-    return this.api.patch(`/products/${id}/stock`, { change, reason });
+    return this.api.patch(`/api/products/${id}/stock`, { change, reason });
   }
 
   uploadImages(files: File[]): Observable<{ success: boolean; urls: string[] }> {
     const fd = new FormData();
     files.forEach(f => fd.append('images', f));
-    return this.api.postFormData('/upload/product', fd);
+    return this.api.postFormData('/api/upload/product', fd);
   }
 
   addReview(productId: string, rating: number, comment: string) {
-    return this.api.post(`/products/${productId}/review`, { rating, comment });
+    return this.api.post(`/api/products/${productId}/review`, { rating, comment });
   }
 
   formatPrice(price: number): string {
