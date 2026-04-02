@@ -2,11 +2,11 @@
   "name": "vastra-vaibhav-frontend",
   "version": "1.0.0",
 "scripts": {
-    "build": "npx --yes @angular/cli@17 build --configuration production"
-  },
-  "engines": {
-    "node": "24.x"
-  },
+  "build": "chmod +x ./node_modules/.bin/ng && ./node_modules/.bin/ng build --configuration production"
+},
+ "engines": {
+  "node": "24.x"
+},
   "dependencies": {
     "@angular/animations": "^17.0.0",
     "@angular/common": "^17.0.0",
