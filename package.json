@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "ng serve",
-    "build": "node node_modules/@angular/cli/bin/ng build --configuration production",
-    "postbuild": "cp -r dist/saree-shop/* dist/",
+    "build": "ng build --configuration production",
+  "postbuild": "cp -r dist/saree-shop/* dist/",
     "dev": "ng serve --proxy-config proxy.conf.json"
   },
   "dependencies": {
