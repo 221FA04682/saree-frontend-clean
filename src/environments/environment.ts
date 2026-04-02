@@ -1,4 +1,4 @@
 export const environment = {
-  production: false,
-  apiUrl: 'https://saree-backend-mtlb.onrender.com/api',
+  production: true,
+  apiUrl: 'https://saree-backend-mtlb.onrender.com'
 };
