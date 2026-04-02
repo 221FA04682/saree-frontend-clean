@@ -1,12 +1,12 @@
 {
   "name": "vastra-vaibhav-frontend",
   "version": "1.0.0",
-"scripts": {
-  "build": "ng build --configuration production"
-},
- "engines": {
-  "node": "24.x"
-},
+  "scripts": {
+    "build": "ng build --configuration production"
+  },
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@angular/animations": "^17.0.0",
     "@angular/common": "^17.0.0",
@@ -22,9 +22,8 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.0.0",
-    "@angular/cli": "^17.0.0",
+    "@angular/cli": "^17.3.17",
     "@angular/compiler-cli": "^17.0.0",
     "typescript": "~5.2.2"
   }
-  
 }
