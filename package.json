@@ -2,7 +2,7 @@
   "name": "vastra-vaibhav-frontend",
   "version": "1.0.0",
 "scripts": {
-  "build": "ng build --configuration production && ls -R dist"
+  "build": "ng build --configuration production"
 },
  "engines": {
   "node": "24.x"
